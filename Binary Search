@@ -7,7 +7,7 @@ int binarySearch(int arr[], int size, int x)
   int start = 0, end = size-1;
   while (start <= end)
   {
-		int mid = (start + end) / 2;
+		int mid = (start + end) / 2;           //mid = start + (end - start) / 2 to avoid overflow incase addition values exceed integer range
 
 		// If the element is present at the middle itself
 		if (arr[mid] == x) return mid;
